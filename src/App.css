@@ -3,7 +3,14 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(16, 1, 41);
-    color: white;
-    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    /* height: 1000vh; */
+}
+
+@media screen and (min-width: 920px) {
+    .CardItem{
+        display: flex;
+        flex-direction: column;
+    }
 }

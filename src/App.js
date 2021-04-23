@@ -27,19 +27,19 @@ function App() {
       <h1>Todo App of Rishaw <span>🚀</span> </h1>
       <Card
         style={{
-          width: "500px",
+          margin: '20px',
           display: "flex",
           justifyContent: "space-evenly",
           alignItems: "center",
-          background: "white" /**/,
-          boxShadow: "0px 2px 10px black",
+          background: "#bf80ff" /**/,
+          boxShadow: "0px 1px 8px black",
           marginTop: "10px",
         }}
       >
         <CardContent>
           <TextField
             style={{
-              background: "rgb(204, 204, 204)",
+              background: "white",
               border: "none",
               borderRadius: "2px",
             }}
@@ -77,24 +77,23 @@ function App() {
         </CardActions>
       </Card>
       {todos.length === 0 ? (
-        <Card style={{ marginTop: "10px" }}>
+        <Card style={{ marginTop: "10px", backgroundColor: '#ff3333' }}>
           <CardContent>
             <h3>No Todos Found</h3>
           </CardContent>
         </Card>
       ) : (
-        <List style={{ background: "gray", marginTop: "30px", width: "500px" }}>
+        <List style={{ marginTop: "5px" }}>
           {todos.map((a, i) => {
             console.log();
             return (
               <ListItem
-                style={{
-                  background: "white",
-                  margin: "10px 20px",
-                  width: "450px",
-                  borderRadius: "10px",
-                  color: 'black',
-                }}
+              style={{
+                background: "gray",
+                marginTop: '10px',
+                borderRadius: "10px", 
+                width: '35vw'
+              }}
                 key={i}
               >
                 <ListItemText primary={a} />
